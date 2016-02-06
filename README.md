@@ -6,6 +6,7 @@ This program allows a user to enter English words and output Morse code to the m
   2. Select 0 to convert English to Morse, 1 from Morse to English 
   3. Follow on screen instructions
   4. Press 2 at main menu to exit
+
 #### Known Issues
  - Must delimit Morse code to English by using spaces
  - Example: -.- . ... s -.-- . .. output would be YES YES
