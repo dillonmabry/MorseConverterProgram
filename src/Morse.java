@@ -40,8 +40,8 @@ public class Morse {
 							.showInputDialog("Please enter a word or sentence without punctuation: ");
 					if ((engInput.startsWith(".") || engInput.startsWith("-"))) {
 						JOptionPane.showMessageDialog(frame,
-								"Please enter English not Morse code!\n Returning to menu....");
-						System.out.println("Please enter English not Morse code!\n Returning to menu....");
+								"Please enter English not Morse code!");
+						System.out.println("Please enter English not Morse code!");
 						break;
 					}
 					System.out.println(Code.toMorse(engInput));
@@ -55,8 +55,8 @@ public class Morse {
 					if (!(morseInput.startsWith(".") || morseInput.startsWith("-")
 							|| morseInput.toUpperCase().startsWith("S"))) {
 						JOptionPane.showMessageDialog(frame,
-								"Please enter Morse code not English!\n Returning to menu....");
-						System.out.println("Please enter morse code not English!\n Returning to menu....");
+								"Please enter Morse code not English!");
+						System.out.println("Please enter morse code not English!");
 						break;
 					}
 					System.out.println(Code.toEnglish(morseInput));
@@ -68,6 +68,7 @@ public class Morse {
 					System.exit(0);
 				}
 			} catch (NumberFormatException e) {
+				JOptionPane.showMessageDialog(frame, "Input error! Please select options 0-2!");
 				System.out.println("Input error! Please select options 0-2!");
 				continue;
 			}
